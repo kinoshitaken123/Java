@@ -63,3 +63,29 @@ System.out.println(x);
 x = x +2;
 
 System.out.println(x);
+
+class Main {
+  public static void main(String[] args) {
+    int length = 6;
+    int height = 8;
+    
+    // 変数rectangleAreaに、四角形の面積を代入してください
+    int rectangleArea = length * height;
+    
+    // 変数rectangleAreaを出力してください
+    System.out.println(rectangleArea);
+    
+    // 変数triangleAreaに、三角形の面積を代入してください
+    int triangleArea = length * height / 2;
+    
+    // 変数triangleAreaを出力してください
+    System.out.println(triangleArea);
+    
+  }
+}
+
+//型変換について
+//「+」などの操作は同じデータ型同士でないとできません。
+//よって型の違うものを演算するときは、型を変換し同じ型にしてあげます。
+//Javaではこの型変換の方法として、自動の変換と手動の変換があります。
+//まずは自動型変換を学びましょう。下図のようにString型とint型を足すと、int型が自動でString型に変換され、文字列の結合が行われます。
