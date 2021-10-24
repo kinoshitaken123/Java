@@ -234,3 +234,92 @@ class Main {
       }
     }
   }
+
+  class Main {
+    public static void main(String[] args) {
+      System.out.println("=== while文 ===");
+      int i = 1;
+      while (i < 10) {
+        // iが5の倍数のとき、繰り返し処理を終了してください
+        if (i % 5 == 0) {
+         break;
+        }
+        
+        System.out.println(i);
+        i++;
+      }
+      
+      System.out.println("=== for文 ===");
+      for (int j = 1; j < 10; j++) {
+        // jが3の倍数のとき、処理をスキップしてください
+        if(j % 3 == 0){
+          continue;
+        }
+        
+        System.out.println(j);
+      }
+    }
+  }
+
+  //配列
+
+  class Main {
+    public static void main(String[] args) {
+      // 変数namesに、配列を代入してください
+      String[] names = {"にんじゃわんこ","ひつじ仙人","ベイビーわんこ"};
+      
+      // インデックス番号が0の要素を出力してください
+      System.out.println(names[0]);
+      
+      // インデックス番号が2の要素を出力してください
+      System.out.println(names[2]);
+      
+    }
+  }
+
+  //配列
+  class Main {
+  public static void main(String[] args) {
+    // 変数languagesを定義し、配列を代入してください
+    String languages[] = {"Ruby", "PHP", "Python"};
+    
+    // インデックス番号が「1」の要素を出力してください
+    System.out.println(languages[1]);
+    
+    // インデックス番号が「1」の要素を「Java」で上書きしてください
+    languages[1] = "Java";
+    
+    // インデックス番号が「1」の要素を出力してください
+    System.out.println(languages[1]);
+    
+  }
+}
+
+//配列と繰り返し
+class Main {
+    public static void main(String[] args) {
+      String[] names = {"にんじゃわんこ", "ひつじ仙人", "ベイビーわんこ"};
+      
+      // for文を用いて、「私の名前は◯◯です」と出力してください
+      for(int i = 0; i< names.length; i++){
+        System.out.println("私の名前は" + names[i] + "です"); 
+      }
+    }
+  }
+
+//普通のfor文との比較
+//普通のfor文と比較し、拡張for文への書き換えができるようになりましょう。
+//普通のfor文ではインデックス番号を用いて配列の要素を取得しなければなりませんが、
+//拡張for文では変数に配列の要素自体が代入されます。拡張for文の方がシンプルに書けることが多いので覚えておきましょう。
+
+class Main {
+    public static void main(String[] args) {
+      String[] names = {"にんじゃわんこ", "ひつじ仙人", "ベイビーわんこ"};
+      
+      // 配列用のfor文を用いて、「私の名前は◯◯です」と出力してください
+      for(String name : names){
+        System.out.println("私の名前は" + name +"です");
+      }
+      
+    }
+  }
