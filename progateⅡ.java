@@ -199,3 +199,38 @@ class Main {
        }
     }
    }
+
+   class Main {
+    public static void main(String[] args) {
+      int number = 10;
+      
+      // while文を用いて、numberが0より大きい場合に繰り返す、繰り返し処理を作ってください
+      int i = 1;
+      
+      while( number > 0){
+        System.out.println(number);
+        number--;
+      }
+      
+    }
+  }
+
+  //for文
+
+  class Main{
+      public static void main(String[] args) {
+          for(int i = 1; i <= 5; i++)
+
+          System.out.println(i);
+      }
+  }
+
+  class Main {
+    public static void main(String[] args) {
+      // for文を用いて、繰り返し処理をつくってください
+      for(int i=1; i <= 10; i++) {
+      
+      System.out.println(i + "回目のループです");
+      }
+    }
+  }
