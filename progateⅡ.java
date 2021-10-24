@@ -82,3 +82,83 @@ class Main {
 if(条件式){
   処理;
 }
+
+int x = 10;
+if(x == 10){
+    System.out.println("xは10です");
+}
+
+int x = 20;
+if(x < 30) {
+    System.out.println("条件はtrue");
+    System.out.println("xは30より小さい");
+}
+
+class Main {
+    public static void main(String[] args) {
+      // 条件式に直接trueをいれてください
+      if (true) {
+        System.out.println("条件式がtrueのため、出力されます");
+      }
+      
+      // 条件式に直接falseをいれてください
+      if (false) {
+        System.out.println("条件式がfalseのため、出力されません");
+      }
+      
+      int x = 5;
+      // if文を用いて、変数xが2より大きいとき「xは2より大きい」と出力してください
+      if(x > 2) {
+        System.out.println("xは2より大きい");
+      }
+      
+      // if文を用いて、変数xが8より大きいとき「xは8より大きい」と出力してください
+      if(x > 8) {
+        System.out.println("xは8より大きい");
+      }
+      
+    }
+  }
+
+  int x = 20;
+  if( x < 30){
+    System.out.println("xは30より小さい");
+  } else {
+    System.out.println("xは30以上); 
+  }
+
+  class Main {
+    public static void main(String[] args) {
+      int number = 12;
+      
+      // numberが20より小さいとき、どちらでもないときの条件分岐を追加してください
+      if (number < 10) {
+        System.out.println("10より小さい");
+      } else if (number < 20 ){
+        System.out.println("10以上、20より小さい");
+      } else {
+        System.out.println("20以上");
+      }
+      
+    }
+  }
+
+  class Main {
+    public static void main(String[] args) {
+      int number = 12;
+      
+      // switch文を用いて、numberを3で割った余りで条件分岐をしてください
+      switch(number % 3){
+        case 0:
+        System.out.println("3で割り切れます");
+        break;
+        case 1:
+        System.out.println("3で割ると1余ります");
+        break;
+        case 2:
+        System.out.println("3で割ると2余ります");
+        break; 
+      }
+      
+    }
+  }
